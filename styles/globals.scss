@@ -1,0 +1,15 @@
+.nav{
+    width: 1.5em;
+    height: 1.5em;
+    &:hover {
+        transform: scale(1.7);
+        transition: all;
+        transition-duration: 150ms;
+        cursor: pointer;
+    }
+}
+
+.menu{
+    width: 1.5em;
+    height: 1.5em;
+}
