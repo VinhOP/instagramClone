@@ -10,10 +10,10 @@ const Body = () => {
         templateColumns={{base: 'repeat(1,1fr)', md: 'repeat(2,1fr)', xl: 'repeat(3,1fr)' }}
         maxW={{md: '3xl', xl: '5xl'}}
         mx='auto'
-        bg='gray.200'
+        bg='gray.50'
         maxW='5xl'
         >
-            <GridItem colSpan='2' bg='white'>
+            <GridItem colSpan='2'>
                 {/** Left */}
                 <Stories />
                 <Posts />

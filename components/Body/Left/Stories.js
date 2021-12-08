@@ -13,14 +13,14 @@ const Stories = () => {
     }, []);
     
     return (
-        <Flex overflowX='scroll' mt='2em'>
-        {suggestions?.map((user) => {
-            return <Story key={user.id}
+        <Flex overflowX='scroll' bg='white' mt='2em' p='.5em' border='1px' borderColor='gray.300'>
+        {suggestions?.map((user) => (
+            <Story key={user.id}
             img={user.avatar}
             firstName={user.first_name}
             lastName={user.last_name}
             />
-        })}
+        ))}
         </Flex>
     );
 }
