@@ -20,7 +20,7 @@ const Suggestions = () => {
             </Flex>
             {/* Suggest List */}
             {suggestions.map(suggestion => (
-                <Flex justifyContent='space-between' alignItems='center' mt='1em'>
+                <Flex justifyContent='space-between' alignItems='center' mt='1em' key={suggestion.id}>
                     <Flex>
                         {/* avatar */}
                         <Box border='2px' borderColor='red.500' rounded='full' p='2px' mr='.7em'>

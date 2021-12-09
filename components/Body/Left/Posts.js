@@ -52,14 +52,14 @@ const Posts = () => {
     return (
         <Box mt='2em'>
             {posts.map(post => (
-            <PostContext.Provider value={{
+            <PostContext.Provider key={post.id} value={{
                 userName: post.userName,  
                 avatar: post.userAvt, 
                 img: post.img.src,
                 likes: post.likes.counter, 
                 caption: post.caption.value,
                 }}>
-                <Post key={post.id} />
+                <Post />
             </PostContext.Provider>
             ))}
         </Box>
