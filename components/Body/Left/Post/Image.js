@@ -5,11 +5,11 @@ import { PostContext } from "../../../../Contexts/PostContext";
 
 const Image = () => {
 
-    const { img }= useContext(PostContext)
+    const { img } = useContext(PostContext)
 
     return ( 
         <Center>
-                <Img src={img} maxH='40em' maxW='full'/>
+            <Img src={img} maxH='40em' maxW='full'/>
         </Center>
     );
 }

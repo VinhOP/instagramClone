@@ -1,6 +1,6 @@
 import { Box } from "@chakra-ui/react";
 import Caption from "./Caption";
-import IconBar from "./IconBar";
+import IconBar from "./IconsBar";
 import Image from "./Image";
 import InputBar from "./InputBar";
 import LikesBar from "./LikesBar";

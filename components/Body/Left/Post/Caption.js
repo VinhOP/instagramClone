@@ -8,7 +8,7 @@ const Caption = () => {
 
     return ( 
         <Flex h='fit-content'>
-            <Text fontWeight='bold' mr='.5em'> {userName} </Text>
+            <Text fontWeight='semibold' mr='.5em'> {userName} </Text>
             <Text wordBreak='break-all' h='fit-content'> {caption} </Text>
             {/* {<Box pos='relative'>
                 <Text bottom={0} pos='absolute' fontSize='.9em' fontWeight='semibold' color='gray.500'> more</Text> 

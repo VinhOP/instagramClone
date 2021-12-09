@@ -2,6 +2,7 @@ import Body from '../components/Body'
 import Header from '../components/Header/index'
 import styles from '../styles/Home.module.css'
 import { UsersContext } from '../Contexts/UsersContext'
+import { Box } from '@chakra-ui/layout'
 
 
 export const getServerSideProps = async () => {
@@ -15,11 +16,11 @@ export const getServerSideProps = async () => {
 
 export default function Home({users}) {
   return (
-    <div>
+    <Box bg='gray.50'>
       <UsersContext.Provider value={users}>
         <Header />
         <Body />
       </UsersContext.Provider>
-    </div>
+    </Box>
   )
 }
