@@ -24,12 +24,12 @@ const Suggestions = () => {
                     <Flex>
                         {/* avatar */}
                         <Box border='2px' borderColor='red.500' rounded='full' p='2px' mr='.7em'>
-                            <Img src={suggestion.avatar} rounded='full' bg='blue.600' boxSize='3em'/>
+                            <Img src={suggestion.avatar} alt='' rounded='full' bg='blue.600' boxSize='3em'/>
                         </Box>
 
                         {/* name */}
                         <Box maxW='5em' mt='.5em'>
-                            <Text isTruncated fontSize='14px' fontWeight='semibold'> 
+                            <Text isTruncated fon   tSize='14px' fontWeight='semibold'> 
                                 {suggestion.first_name} {suggestion.last_name} 
                             </Text>
                             <Text fontSize='14px' color='gray'> popular </Text>

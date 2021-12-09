@@ -9,7 +9,7 @@ const Image = () => {
 
     return ( 
         <Center>
-            <Img src={img} maxH='40em' maxW='full'/>
+            <Img src={img} alt='' maxH='40em' maxW='full'/>
         </Center>
     );
 }

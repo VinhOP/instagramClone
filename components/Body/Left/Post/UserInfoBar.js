@@ -11,7 +11,7 @@ const UserInfoBar = () => {
         <Flex alignItems='center' m='.5em 1em' justifyContent='space-between'>
             <Flex>
                 <Box border='2px' borderColor='red.500' rounded='full'>
-                    <Img src={avatar} rounded='full' boxSize='3em' p='2px'/>
+                    <Img src={avatar} alt='' rounded='full' boxSize='3em' p='2px'/>
                 </Box>
                 <Text m='.5em'> {userName} </Text>
             </Flex>
