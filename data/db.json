@@ -160,5 +160,27 @@
     "gender": "Male",
     "ip_address": "163.233.81.210",
     "avatar": "https://robohash.org/aliasvoluptatemnatus.jpg?size=50x50&set=set1"
-  }]
+  }],
+
+  "posts": 
+  [
+    {
+    "id": 1,
+    "userName": "Tom",
+    "userAvt": "https://helios-i.mashable.com/imagery/articles/04voU2yaTvRXA8qWL1yMD3M/hero-image.fill.size_1200x900.v1614266958.jpg",
+    "img": {
+      "src": "https://randompicturegenerator.com/img/people-generator/ga40a79457c77c0f435a964516a0a1bdb0f670070359517eb5e4ce88497871e999c3bf907c46bcb0093c33394ca89f2b8_640.jpg"
+    },
+    "caption": {
+      "value": "Tình thương"
+    },
+    "likes": {
+      "counter": 0
+    }
+    }, 
+  
+  {
+
+  }
+]
 }

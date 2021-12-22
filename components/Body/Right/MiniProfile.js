@@ -1,23 +1,28 @@
 import { Box,Img,Text,Flex,Button } from "@chakra-ui/react";
+import { useSession } from "next-auth/react";
+import { signOut } from 'next-auth/react'
 
 const MiniProfile = () => {
+
+    const { data: session } = useSession()
+
     return ( 
     <Flex justifyContent='space-between'>
         <Flex>
             <Img 
-            src='https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg' 
+            src={session.user?.image}
             alt=''
             rounded='full'
             mr='.5em'
             h='3em'
             />
             <Box>
-                <Text fontWeight='semibold' fontSize='.8em'> email@gmail.com </Text>
-                <Text color='gray' fontSize='.7em'> name </Text>
+                <Text fontWeight='semibold' fontSize='.8em'> {session.user?.email} </Text>
+                <Text color='gray' fontSize='.7em'> {session.user?.name}</Text>
             </Box>
         </Flex>
         <Box>
-            <Button> <Text fontSize='.8em'> Sign out </Text> </Button>
+            <Button onClick={signOut}> <Text fontSize='.8em'> Sign out </Text> </Button>
         </Box>
     </Flex>
      );

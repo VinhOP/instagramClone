@@ -1,9 +1,12 @@
 import { HomeIcon,MenuIcon } from '@heroicons/react/solid';
 import { createBreakpoints } from '@chakra-ui/theme-tools';
 import { PaperAirplaneIcon,PlusCircleIcon,HeartIcon } from '@heroicons/react/outline';
-import { Flex,Box,Img } from '@chakra-ui/react';
+import { Flex,Box,Img, Button } from '@chakra-ui/react';
+import { useSession,signIn } from 'next-auth/react';
 
 const Right = () => {
+    const { data: session } = useSession()
+    
     return ( 
         <Flex 
         alignItems='center' 
@@ -23,12 +26,16 @@ const Right = () => {
             </Box>
             <HeartIcon className='nav' />
             <MenuIcon className='menu' />
-            <Img 
-            src='https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg' 
+
+            {session?
+            <Img
+            src={session.user?.image} 
             alt='profile picture'
-            boxSize='1.5em'
+            boxSize='1.6em'
             rounded='full'
-            />
+            cursor='pointer'
+            /> : 
+            <Button onClick={signIn}> Sign in </Button>}
         </Flex>
      );
 }
